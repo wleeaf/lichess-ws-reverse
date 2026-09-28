@@ -1,0 +1,25 @@
+{
+  "name": "lichess-reverse",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Reverse engineering the lichess.org internal WebSocket protocol",
+  "scripts": {
+    "capture": "tsx src/capture.ts",
+    "analyze": "tsx src/analyze.ts",
+    "client": "tsx src/client.ts",
+    "play": "tsx src/play.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "chess.js": "^1.4.0",
+    "playwright": "^1.56.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/ws": "^8.5.13",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
